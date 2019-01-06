@@ -141,6 +141,7 @@ Module.register("MMM-ImageSlideshow", {
 						styleString += 'width:' + this.config.fixedImageWidth + 'px;';
 					if (this.config.fixedImageHeight != 0)
 						styleString += 'height:' + this.config.fixedImageHeight + 'px;';
+					styleString += "image-orientation: from-image;";
 					// if style string has antyhing, set it
 					if (styleString != '')
 						image.style = styleString;
